@@ -1,0 +1,40 @@
+doctype html
+head
+  meta(charset='UTF-8')
+  meta(name='viewport' content='width=device-width, initial-scale=1.0')
+  link(rel='stylesheet' href='../static/web.css')
+header
+  .container
+    // blank space
+.gui
+  #spaceing.container
+    #pos1.container
+      ol.container
+        li
+          a(href='#') Home
+        li
+          a(href='#') Products
+        li
+          a(href='#') Contact Us
+    #pos2.container
+      ol.container
+        li
+          a(href='#') Cart
+        li
+          a(href='signup.pug')
+            strong User
+  #line.container
+    // line
+  .pos
+    form(method='post' action='/data')
+      h1 Sign Up
+      label(for='signUpEmail') Email:
+      br
+      input#signUpEmail(type='email' name='email')
+      br
+      label(for='signUpPassword') Password:
+      br
+      input#signUpPassword(type='password' name='password')
+      br
+      br
+      input#submit(type='submit')
